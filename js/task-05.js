@@ -7,7 +7,7 @@ const spanEl = document.querySelector("#name-output");
 inputEl.addEventListener("input",onInputChenge);
  
 function onInputChenge(event) {
-    console.log(event.currentTarget.value) 
-     spanEl.textContent = event.currentTarget.value
+    console.log(event.currentTarget.value);
+    spanEl.textContent = event.currentTarget.value
     
 };

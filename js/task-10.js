@@ -55,4 +55,4 @@ function createBoxes(amount) {
 
 function destroyBoxes() { 
   boxesEl.innerHTML = ''; 
-}
+};

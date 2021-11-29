@@ -5,9 +5,9 @@ const velueEl = document.querySelector("#value");
 const buttonDecrementEl = document.querySelector("[data-action=decrement]");
 
 buttonIncrementEl.addEventListener("click", () => {
-velueEl.textContent = counterValue += 1
+    velueEl.textContent = counterValue += 1
 });
 
 buttonDecrementEl.addEventListener("click", () => {
-velueEl.textContent=counterValue-=1
+    velueEl.textContent = counterValue -= 1
 });
