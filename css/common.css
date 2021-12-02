@@ -26,6 +26,6 @@ button {
   display: flex;
 }
 .photo {
-  align-items: baseline;
+  margin: 15px;
   list-style: none;
 }

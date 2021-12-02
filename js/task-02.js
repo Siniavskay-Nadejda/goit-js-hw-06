@@ -7,32 +7,20 @@ const ingredients = [
   'Condiments',
 ];
 
-const itemEl1 = document.createElement("li");
-itemEl1.classList.add("item");
-itemEl1.textContent = 'Potatoes';
 
-const ulEl = document.querySelector("#ingredients");
+let ulEl = document.querySelector("#ingredients");
+console.log(ulEl)
 
-const itemEl2 = document.createElement("li");
-itemEl2.classList.add("item");
-itemEl2.textContent = 'Mushrooms';
+const colection = ingredients.map(ingredient => {
+  const items = document.createElement("li")
+  items.textContent = ingredient
+  items.classList.add("item")
+  ulEl.append(items)
+});
+ 
 
-const itemEl3 = document.createElement("li");
-itemEl3.classList.add("item");
-itemEl3.textContent = 'Garlic';
 
-const itemEl4 = document.createElement("li");
-itemEl4.classList.add("item");
-itemEl4.textContent = 'Tomatos';
 
-const itemEl5 = document.createElement("li");
-itemEl5.classList.add("item");
-itemEl5.textContent = 'Herbs';
-
-const itemEl6 = document.createElement("li");
-itemEl6.classList.add("item");
-itemEl6.textContent = 'Condiments';
-ulEl.append(itemEl1, itemEl2, itemEl3, itemEl4, itemEl5, itemEl6);
 
 
 
