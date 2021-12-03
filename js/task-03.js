@@ -16,8 +16,14 @@ const images = [
 
 const galleryСontainerRef = document.querySelector(".gallery");
 
-const makeGalery = images.map(imag  => {
- const elGalery =  `<li class="photo"><img src ="${imag.url}" alt ="${imag.alt}" width = 1000 height = 700 ></li>`
- galleryСontainerRef.insertAdjacentHTML("afterbegin", elGalery)
-});
-console.log(galleryСontainerRef)
+const photoMarkup = galleryMarkup(images);
+galleryСontainerRef.insertAdjacentHTML("beforeend", photoMarkup);
+
+function galleryMarkup(images) {
+  return images.map(({ url, alt }) => {
+    return `<li class="photo"><img src ="${url}" alt ="${alt}" width = 1000 height = 700 ></li>`
+  }).join("");
+};
+
+
+
